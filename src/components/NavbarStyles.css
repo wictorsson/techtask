@@ -1,0 +1,51 @@
+.header {
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(254, 254, 254, 0.4);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 1.5%;
+}
+
+.navbar-left {
+    display: flex;
+    align-self: center;
+    gap: 25px;
+}
+
+.navbar-right {
+    display: flex;
+
+}
+
+.navbar-left-nav-link {
+    text-decoration: none;
+    color: rgb(105, 105, 105);
+}
+
+@media screen and (max-width: 768px) {
+
+    .navbar {
+        width: 100%;
+        flex-wrap: wrap;
+        /* justify-content: flex-start; */
+        gap: 10px;
+    }
+
+    .navbar-left {
+        gap: 10px;
+        width: 100%;
+        display: flex;
+    }
+
+    .navbar-left-nav-link {
+        font-size: small;
+    }
+}
